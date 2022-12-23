@@ -3,7 +3,15 @@
 function üstel() {
     var taban = document.getElementById("taban").value
     var üs = document.getElementById("üs").value
-    if (+taban < 0 && +üs < 0) {
+    if (+taban === 0 && +üs === 0) {
+      document.getElementById("üstelsonuç").innerHTML = `${+taban}<sup>${+üs}</sup> = Tanımsız`;
+      console.log(`${+taban}<sup>${+üs}</sup> = Tanımsız`);
+    }
+    else if (+taban < 0 && +üs < 0 && Math.abs(+üs)%2 === 0) {
+      document.getElementById("üstelsonuç").innerHTML = `(${+taban})<sup>(${+üs})</sup> = ${Math.pow(+taban, +üs)}`;
+      console.log(`(${+taban})<sup>(${+üs})</sup> = ${Math.pow(+taban, +üs)}`);
+    }
+    else if (+taban < 0 && +üs < 0 && Math.abs(+üs)%2 === 1) {
       document.getElementById("üstelsonuç").innerHTML = `(${+taban})<sup>(${+üs})</sup> = (${Math.pow(+taban, +üs)})`;
       console.log(`(${+taban})<sup>(${+üs})</sup> = (${Math.pow(+taban, +üs)})`);
     }

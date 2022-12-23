@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="math.css" />
+    <title></title>
+  </head>
+  <body>
+    <div style="margin: 50px"></div>
+    <div class="row">
+      <div class="column">
+        <div class="background">
+          <h1>BASİT HESAP MAKİNESİ</h1>
+          <form>
+            <input type="number" id="a" placeholder="Sayı" /><input
+              type="number"
+              id="b"
+              placeholder="Sayı"
+            />
+          </form>
+          <div style="margin-top: 10px">
+            <button onclick="hesapmakinesitemizle()" id="hesapmakinesitemizle">
+              Temizle
+            </button>
+            <button onclick="çevir()" id="çevir">Çevir</button>
+          </div>
+          <div style="margin-top: 10px">
+            <button onclick="topla()" class="işlem" id="topla">+</button>
+            <button onclick="çıkar()" class="işlem" id="çıkar">-</button>
+            <button onclick="çarp()" class="işlem" id="çarp">×</button>
+            <button onclick="böl()" class="işlem" id="böl">÷</button>
+          </div>
+          <button class="sonuç" id="hesapmakinesisonuç">Sonuç</button>
+        </div>
+        <div class="background">
+          <h1>YÜZDE HESAPLAYICI</h1>
+          <form>
+            <input type="number" id="yüzdesayı" placeholder="Sayı" />
+            <input type="number" id="yüzde" placeholder="Yüzde" />%
+          </form>
+          <div style="margin-top: 10px">
+            <button onclick="yüzde()" id="yüzdehesapla">Hesapla</button>
+            <button onclick="yüzdetemizle()" id="yüzdetemizle">TEMİZLE</button>
+          </div>
+          <div><button class="sonuç" id="yüzdesonuç">Sonuç</button></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="background">
+          <h1>KUVVET HESAPLAYICI</h1>
+          <form>
+            <input type="number" id="taban" placeholder="Taban" /><input
+              type="number"
+              id="üs"
+              placeholder="Kuvvet"
+            />
+          </form>
+          <div style="margin-top: 10px">
+            <button onclick="üstel()" id="üstelhesapla">Hesapla</button>
+            <button onclick="üsteltemizle()" id="üsteltemizle">TEMİZLE</button>
+          </div>
+          <div><button class="sonuç" id="üstelsonuç">Sonuç</button></div>
+        </div>
+        <div class="background">
+          <h1>FAKTÖRİYEL HESAPLAYICI</h1>
+          <p>
+            Faktöriyel hesabı için negatif olmayan bir tam sayı değeri giriniz.
+          </p>
+          <form>
+            <input
+              type="number"
+              min="0"
+              step="1"
+              id="faktöriyelsayı"
+              placeholder="Sayı"
+            />!
+          </form>
+          <div style="margin-top: 10px">
+            <button onclick="faktöriyel()" id="faktöriyelhesapla">
+              Hesapla
+            </button>
+            <button onclick="faktöriyeltemizle()" id="faktöriyeltemizle">
+              TEMİZLE
+            </button>
+          </div>
+          <div><button class="sonuç" id="faktöriyelsonuç">Sonuç</button></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="backgroundlogo"onclick="openTab('b2');" style="background:rgba(255, 255, 255, 0.95);"><h2>Mücahit KESGİN</h2></div>
+
+    <div id="b2" class="containerTab" style="display:none;background:rgba(255, 255, 255, 0.95);">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+      <a
+          href="https://www.linkedin.com/in/m%C3%BCcahit-kesgin-223b75242/"
+          target="”_blank”"
+          ><img
+            src="https://1000logos.net/wp-content/uploads/2017/03/Linkedin-Logo.png"
+            alt="Linledin"
+            style="
+              width: 92.2776189667px;
+              height: 51.757188498px;
+              border-radius: 10px;
+            "
+        /></a>
+        <a href="https://www.instagram.com/mucahitkesgin/" target="”_blank”"
+          ><img
+            src="https://1000logos.net/wp-content/uploads/2017/02/ig-logo.png"
+            alt="Instagram"
+            style="
+              width: 155.846645366px;
+              height: 51.757188498px;
+              border-radius: 10px;
+            "
+        /></a>
+    </div>
+
+      <div style="margin: 50px">
+        <button
+          onclick="yukarıgit()"
+          id="yukarıgit"
+          class="button-30"
+          role="button"
+        >
+          &#9757;
+        </button>
+      </div>
+    </div>
+    <script src="math.js"></script>
+  </body>
+</html>

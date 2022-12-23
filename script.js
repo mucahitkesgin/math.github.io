@@ -209,7 +209,7 @@ function çevir() {
     document.getElementById("hesapmakinesisonuç").innerHTML = `(${+b}) - ${+a} = (${+b - +a})`;
   }
   else if(sonuç === (document.getElementById("hesapmakinesisonuç").innerHTML = `${+a} - (${+b}) = ${+a - +b}`)) {
-    document.getElementById("hesapmakinesisonuç").innerHTML = `(${+b}) - ${+a} = ${+b - +a}`;
+    document.getElementById("hesapmakinesisonuç").innerHTML = `(${+b}) - ${+a} = (${+b - +a})`;
   }
   else if(sonuç === (document.getElementById("hesapmakinesisonuç").innerHTML = `${+a} - ${+b} = ${+a - +b}`)) {
     document.getElementById("hesapmakinesisonuç").innerHTML = `${+b} - ${+a} = ${+b - +a}`;
